@@ -6,14 +6,17 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
+  let pronouns = ["the", "our"];
+  let adjetives = ["great", "big"];
+  let nouns = ["jogger", "racoon"];
+  let domains = ["com", "es"];
 
-  for (let p of pronoun) {
-    for (let a of adj) {
-      for (let n of noun) {
-        console.log(`${p}${a}${n}.com`)
+  for (let pronoun of pronouns) {
+    for (let adjetive of adjetives) {
+      for (let noun of nouns) {
+        for (let domain of domains) {
+          console.log(`${pronoun}${adjetive}${noun}.${domain}`)
+        }
       }
     }
   }
